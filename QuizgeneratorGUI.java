@@ -155,50 +155,48 @@ public class QuizGeneratorGUI {
         Quiz quiz = new Quiz();
         frame.add(quiz);
 
-        // Add questions to the quiz
+        // Add questions to the quiz with corrected indexes
         List<String> choices1 = List.of("A. Sydney ", "B. Perth", "C. Melbourne", "D. Canberra");
-        Question question1 = new Question("What is the capital city of Australia?", choices1, 4);
+        Question question1 = new Question("What is the capital city of Australia?", choices1, 3);
         quiz.addQuestion(question1);
 
         List<String> choices2 = List.of("A. Delhi", "B. Punjab", "C. Chandigarh", "D. Chennai");
-        Question question2 = new Question("What is the capital of India?", choices2, 2);
+        Question question2 = new Question("What is the capital of India?", choices2, 1);
         quiz.addQuestion(question2);
 
         List<String> choices3 = List.of("A. The Catcher in the Rye ", "B. Moby-Dick", "C. 1984 ", "D. The Great Gatsby");
-        Question question3 = new Question("Which novel features the character Holden Caulfield?", choices3, 3);
+        Question question3 = new Question("Which novel features the character Holden Caulfield?", choices3, 0);
         quiz.addQuestion(question3);
 
         List<String> choices4 = List.of("A. Benjamin Franklin ", "B. Thomas Jefferson", "C. George Washington", "D. John Adams");
-        Question question4 = new Question("Who was the first President of the United States?", choices2, 3);
+        Question question4 = new Question("Who was the first President of the United States?", choices4, 2);
         quiz.addQuestion(question4);
 
         List<String> choices5 = List.of("A. Mercury", "B. Venus", "C. Earth", "D. Mars");
-        Question question5 = new Question("Which planet is known as the Red Planet?", choices5, 4);
+        Question question5 = new Question("Which planet is known as the Red Planet?", choices5, 3);
         quiz.addQuestion(question5);
 
         List<String> choices6 = List.of("A. 4", "B. 5", "C. 6", "D. 7");
-        Question question6 = new Question("How many continents are there in the world?", choices6, 2);
+        Question question6 = new Question("How many continents are there in the world?", choices6, 1);
         quiz.addQuestion(question6);
 
         List<String> choices7 = List.of("A. Python", "B. Java", "C. C++", "D. Ruby");
-        Question question7 = new Question("Which programming language is known for its simplicity?", choices7, 1);
+        Question question7 = new Question("Which programming language is known for its simplicity?", choices7, 0);
         quiz.addQuestion(question7);
 
         List<String> choices8 = List.of("A. wt", "B. H20", "C. wa", "D. wo");
-        Question question8 = new Question("What is the chemical symbol for water?", choices8, 3);
+        Question question8 = new Question("What is the chemical symbol for water?", choices8, 2);
         quiz.addQuestion(question8);
 
         List<String> choices9 = List.of("A. J.K. Rowling", "B. Harper Lee", "C. George Orwell", "D. Jane Austen");
-        Question question9 = new Question("Who wrote the novel To Kill a Mockingbird?", choices9, 2);
+        Question question9 = new Question("Who wrote the novel To Kill a Mockingbird?", choices9, 1);
         quiz.addQuestion(question9);
 
-        List<String> choices10 = List.of("A. Star Trek ", "B. Guardians of the Galaxy", "C. Star Wars", "D. Avatar");
-        Question question10 = new Question(" Which movie is known for the quote, May the Force be with you?", choices10, 3);
+        List<String> choices10 = List.of("A. Star Trek", "B. Guardians of the Galaxy", "C. Star Wars", "D. Avatar");
+        Question question10 = new Question("Which movie is known for the quote, 'May the Force be with you'?", choices10, 2);
         quiz.addQuestion(question10);
 
-
         frame.setVisible(true);
-
         quiz.start();
     }
 }
